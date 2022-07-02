@@ -6,8 +6,7 @@ import re
 url = input("Enter URL:")
 name = input("Website Name:")
 
-# file = open(url + ".txt", "x")
-# file = open(url+'.txt', 'w')
+
 
 
 def gettingData(url):
@@ -28,7 +27,6 @@ def gettingData(url):
     file.write(finalData)
 
     return textData
-    # print(textData)
 
 
 def gettingLinks(textData,url):
@@ -61,7 +59,6 @@ def linkData(allLinks):
     
 
     for url in allLinks:
-        # file = open(name + "all.txt", "w")
         
         file.write("\n \n -----------------links data --------------- \n \n" + url + "\n \n \n")
         r = requests.get(url)
@@ -75,10 +72,6 @@ def linkData(allLinks):
         file.write(finalData)
         
         
-        
-       
- 
-
 
 Data = gettingData(url)
 allLinks = gettingLinks(Data,url)
