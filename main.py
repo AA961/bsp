@@ -1,4 +1,3 @@
-from turtle import ht
 import requests
 from bs4 import BeautifulSoup
 
@@ -44,4 +43,7 @@ for link in anchor:
         link = "https://aa961.github.io" + link.get('href') 
         allLinks.add(link)
         
-print(allLinks )
+# print(allLinks )
+
+
+
